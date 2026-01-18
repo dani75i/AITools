@@ -25,37 +25,51 @@ export default function ToolCard({ tool }) {
   const description = t(`tools.${tool.name}`) || tool.description
 
   return (
-    <div className="card-hover glass-effect rounded-2xl p-6 shadow-xl border border-gray-100 dark:border-slate-700">
-      <div className="flex items-start justify-between mb-4">
-        <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${categoryColors[tool.category] || 'from-gray-400 to-gray-600'} flex items-center justify-center text-2xl shadow-lg`}>
-          {categoryIcons[tool.category] || '🤖'}
+    <div className="card-hover glass-effect rounded-2xl overflow-hidden shadow-xl border border-gray-200/50 dark:border-slate-700/50 bg-white/90 dark:bg-slate-800/90 backdrop-blur-xl flex flex-col h-full transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-600 group">
+      {/* Header avec icône et badge */}
+      <div className="p-6 pb-4">
+        <div className="flex items-start justify-between mb-4">
+          <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${categoryColors[tool.category] || 'from-gray-400 to-gray-600'} flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+            {categoryIcons[tool.category] || '🤖'}
+          </div>
+          <span className="px-3 py-1.5 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold rounded-full border border-blue-200/50 dark:border-blue-700/50">
+            {t(`categories.${tool.category}`)}
+          </span>
         </div>
-        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-xs font-semibold rounded-full">
-          {t(`categories.${tool.category}`)}
-        </span>
+        
+        {/* Titre et description */}
+        <h3 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-3 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+          {tool.name}
+        </h3>
+        <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3 min-h-[3.75rem]">
+          {description}
+        </p>
       </div>
       
-      <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">{tool.name}</h3>
-      <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">{description}</p>
+      {/* Tags - au milieu */}
+      <div className="px-6 py-3 flex items-center flex-wrap gap-2 border-t border-gray-100 dark:border-slate-700/50">
+        {tool.tags.map((tag, index) => (
+          <span
+            key={index}
+            className="px-2.5 py-1 bg-gray-100/80 dark:bg-slate-700/60 text-gray-700 dark:text-gray-300 text-xs font-medium rounded-lg border border-gray-200/50 dark:border-slate-600/50"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
       
-      <div className="flex items-center justify-between">
-        <div className="flex items-center space-x-1 flex-wrap gap-1">
-          {tool.tags.map((tag, index) => (
-            <span
-              key={index}
-              className="px-2 py-1 bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-300 text-xs rounded-md"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
+      {/* Bouton en bas */}
+      <div className="p-6 pt-4 mt-auto">
         <a
           href={tool.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
+          className="w-full flex items-center justify-center px-4 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white text-sm font-semibold rounded-xl hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] group/btn"
         >
-          {t('visit')} →
+          <span>{t('visit')}</span>
+          <svg className="w-4 h-4 ml-2 transform group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
         </a>
       </div>
     </div>

@@ -10,6 +10,28 @@ export const translations = {
     exploreDescription: 'Découvrez une collection soigneusement sélectionnée d\'outils d\'intelligence artificielle',
     noToolsFound: 'Aucun outil trouvé dans cette catégorie',
     
+    // Hero
+    hero: {
+      title: 'Découvrez les Meilleurs Outils d\'IA',
+      description: 'Une collection soigneusement sélectionnée d\'outils d\'intelligence artificielle pour booster votre productivité et votre créativité.',
+      toolsAvailable: 'outils disponibles',
+      totalTools: 'Outils IA',
+      categories: 'Catégories',
+    },
+    
+    // Search
+    searchPlaceholder: 'Rechercher un outil par nom, description ou catégorie...',
+    clearSearch: 'Effacer la recherche',
+    searchResults: '{{count}} résultat(s) pour "{{query}}"',
+    tryDifferentSearch: 'Essayez une recherche différente ou changez de catégorie',
+    
+    // Results
+    results: {
+      singular: 'résultat',
+      plural: 'résultats',
+      for: 'pour',
+    },
+    
     // Categories
     categories: {
       all: 'Tous',
@@ -72,6 +94,28 @@ export const translations = {
     exploreTitle: 'Explore AI Tools',
     exploreDescription: 'Discover a carefully curated collection of artificial intelligence tools',
     noToolsFound: 'No tools found in this category',
+    
+    // Hero
+    hero: {
+      title: 'Discover the Best AI Tools',
+      description: 'A carefully curated collection of artificial intelligence tools to boost your productivity and creativity.',
+      toolsAvailable: 'tools available',
+      totalTools: 'AI Tools',
+      categories: 'Categories',
+    },
+    
+    // Search
+    searchPlaceholder: 'Search for a tool by name, description or category...',
+    clearSearch: 'Clear search',
+    searchResults: '{{count}} result(s) for "{{query}}"',
+    tryDifferentSearch: 'Try a different search or change category',
+    
+    // Results
+    results: {
+      singular: 'result',
+      plural: 'results',
+      for: 'for',
+    },
     
     // Categories
     categories: {
