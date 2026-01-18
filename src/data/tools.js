@@ -210,4 +210,144 @@ export const tools = [
     url: 'https://play.ht',
     tags: ['Multilingue', 'Variété', 'API']
   },
+  
+  // IA de Texte - Outils supplémentaires
+  {
+    id: 26,
+    name: 'Perplexity',
+    description: 'Moteur de recherche IA avec réponses directes et sources citées.',
+    category: 'text',
+    url: 'https://perplexity.ai',
+    tags: ['Recherche', 'IA', 'Réponses']
+  },
+  {
+    id: 27,
+    name: 'Notion AI',
+    description: 'Assistant IA intégré à Notion pour l\'écriture et la productivité.',
+    category: 'text',
+    url: 'https://notion.ai',
+    tags: ['Productivité', 'Écriture', 'Notion']
+  },
+  {
+    id: 28,
+    name: 'Grammarly',
+    description: 'Assistant d\'écriture IA pour corriger la grammaire et améliorer le style.',
+    category: 'text',
+    url: 'https://grammarly.com',
+    tags: ['Grammaire', 'Style', 'Correction']
+  },
+  
+  // IA d'Images - Outils supplémentaires
+  {
+    id: 29,
+    name: 'Firefly',
+    description: 'Générateur d\'images IA d\'Adobe intégré à Creative Cloud.',
+    category: 'image',
+    url: 'https://firefly.adobe.com',
+    tags: ['Adobe', 'Créatif', 'Professionnel']
+  },
+  {
+    id: 30,
+    name: 'Canva AI',
+    description: 'Outil de design avec IA pour créer des visuels professionnels.',
+    category: 'image',
+    url: 'https://canva.com',
+    tags: ['Design', 'Marketing', 'Créatif']
+  },
+  {
+    id: 31,
+    name: 'Flux',
+    description: 'Modèle de génération d\'images IA open-source et performant.',
+    category: 'image',
+    url: 'https://blackforestlabs.ai',
+    tags: ['Open Source', 'Puissant', 'Récent']
+  },
+  
+  // IA de Musique - Outils supplémentaires
+  {
+    id: 32,
+    name: 'Boomy',
+    description: 'Création musicale IA pour générer des morceaux en quelques secondes.',
+    category: 'music',
+    url: 'https://boomy.com',
+    tags: ['Rapide', 'Créatif', 'Simple']
+  },
+  {
+    id: 33,
+    name: 'Soundful',
+    description: 'Générateur de musique de fond IA pour créateurs de contenu.',
+    category: 'music',
+    url: 'https://soundful.com',
+    tags: ['Royalty-free', 'Créateurs', 'Marketing']
+  },
+  
+  // IA de Vidéos - Outils supplémentaires
+  {
+    id: 34,
+    name: 'Kaiber',
+    description: 'Création de vidéos animées par IA à partir d\'images ou de texte.',
+    category: 'video',
+    url: 'https://kaiber.ai',
+    tags: ['Animation', 'Créatif', 'Visuel']
+  },
+  {
+    id: 35,
+    name: 'Luma Dream Machine',
+    description: 'Générateur de vidéos haute qualité à partir de texte ou d\'images.',
+    category: 'video',
+    url: 'https://lumalabs.ai',
+    tags: ['Qualité', 'Récent', 'Génération']
+  },
+  {
+    id: 36,
+    name: 'CapCut',
+    description: 'Éditeur vidéo avec effets IA et outils de montage avancés.',
+    category: 'video',
+    url: 'https://capcut.com',
+    tags: ['Montage', 'Gratuit', 'Mobile']
+  },
+  
+  // IA de Code - Outils supplémentaires
+  {
+    id: 37,
+    name: 'Tabnine',
+    description: 'Autocomplétion IA pour le code avec suggestions intelligentes.',
+    category: 'code',
+    url: 'https://tabnine.com',
+    tags: ['Autocomplétion', 'IDE', 'Productivité']
+  },
+  {
+    id: 38,
+    name: 'Amazon CodeWhisperer',
+    description: 'Assistant de programmation IA d\'Amazon pour plusieurs langages.',
+    category: 'code',
+    url: 'https://aws.amazon.com/codewhisperer',
+    tags: ['Amazon', 'Multi-langages', 'Enterprise']
+  },
+  {
+    id: 39,
+    name: 'Sourcegraph Cody',
+    description: 'Assistant IA pour comprendre et modifier du code à grande échelle.',
+    category: 'code',
+    url: 'https://sourcegraph.com/cody',
+    tags: ['Compréhension', 'Grande échelle', 'Professionnel']
+  },
+  
+  // IA de Voix - Outils supplémentaires
+  {
+    id: 40,
+    name: 'Resemble AI',
+    description: 'Plateforme de clonage vocal IA pour créer des voix personnalisées.',
+    category: 'voice',
+    url: 'https://resemble.ai',
+    tags: ['Clonage', 'Personnalisé', 'API']
+  },
+  {
+    id: 41,
+    name: 'Lovo AI',
+    description: 'Générateur de voix IA avec plus de 500 voix et plusieurs langues.',
+    category: 'voice',
+    url: 'https://lovo.ai',
+    tags: ['Variété', 'Commercial', 'Marketing']
+  },
 ]

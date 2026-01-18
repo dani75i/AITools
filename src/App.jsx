@@ -56,8 +56,8 @@ function App() {
         {/* Hero Section */}
         <HeroSection />
         
-        {/* Barre de recherche */}
-        <div className="mb-8">
+        {/* Barre de recherche sticky */}
+        <div className="sticky top-16 md:top-20 z-40 mb-4 -mx-4 px-4 py-3 bg-gradient-to-b from-transparent via-white/80 to-white dark:via-slate-900/80 dark:to-slate-900 backdrop-blur-sm">
           <SearchBar searchQuery={searchQuery} onSearchChange={setSearchQuery} />
         </div>
         
